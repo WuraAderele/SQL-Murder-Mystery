@@ -101,3 +101,24 @@ cid|	name|	type|	notnull	| dflt_value	|pk|
 0|	ssn|	integer|	0|	null|	1|
 1|	annual_income|	integer|	0|	null|	0|
 
+#### Solution
+	PRAGMA table_info(solution);
+cid|	name	type	notnull	dflt_value	pk
+---|--------|-------|-----------|-----------------|-------|
+0|	user|	integer|	0|	null	|0|
+1|	value|	text	|0|	null|	0|
+
+## 🚀 Solutions
+After understanding the structure of all the tables, I wrote SQL queries to get leads to put together a comprehensive report that would help identify the culprit.
+The result of each query determined the next query.
+### Query 1:
+	SELECT *
+	FROM crime_scene_report
+	WHERE City = "SQL City"
+		AND Type = "murder"
+		AND DATE = "20180115";
+|date|	type|	description|	city|
+|-----|------|--------------|--------|
+|20180115|	murder|	Security footage shows that there were 2 witnesses. The first witness lives at the last house on "Northwestern Dr". The second witness, named Annabel, lives somewhere on "Franklin Ave".|	SQL City|
+
+
