@@ -75,4 +75,29 @@ cid|	name|	type|	notnull	|dflt_value	|pk|
 0|	person_id|	integer|	0|	null|	0|
 1|	transcript|	text|	0|	null|	0|
 
+#### Get_fit_now_member
+	PRAGMA table_info(Get_fit_now_member);
+cid|	name|	type|	notnull	|dflt_value	|pk|
+---|--------|-------|-----------|-----------------|-------|
+0|	id|	text|	0|	null|	1|
+1|	person_id|	integer|	0|	null|	0|
+2|	name|	text|	0|	null|	0|
+3|	membership_start_date|	integer|	0|	null|	0|
+4|	membership_status|	text|	0|	null|	0|
+
+#### Get_fit_now_check_in
+	PRAGMA table_info(Get_fit_now_check_in);
+cid|	name|	type|	notnull	|dflt_value|	pk|
+---|--------|-------|-----------|-----------------|-------|
+0|	membership_id|	text	|0|	null|	0|
+1|	check_in_date|	integer	|0|	null|	0|
+2|	check_in_time|	integer	|0|	null|	0|
+3|	check_out_time|	integer	|0|	null|	0|
+
+#### Income
+	PRAGMA table_info(income);
+cid|	name|	type|	notnull	| dflt_value	|pk|
+---|--------|-------|-----------|-----------------|-------|
+0|	ssn|	integer|	0|	null|	1|
+1|	annual_income|	integer|	0|	null|	0|
 
