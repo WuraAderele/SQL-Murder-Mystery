@@ -30,5 +30,5 @@ cid|	name|	type|	notnull|	dflt_value	|pk|
 ---|--------|-------|----------|------------------------|---|
 0|	date|	integer|	0|	null	0|
 1|	type|	text|	0|	null|	0|
-2|	description| |	text|	0|	null|	0|
+2|	description|	text|	0|	null|	0|
 3|	city	|text|	0|	null|	0|
