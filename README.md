@@ -32,3 +32,19 @@ cid|	name|	type|	notnull|	dflt_value	|pk|
 1|	type|	text|	0|	null|	0|
 2|	description|	text|	0|	null|	0|
 3|	city	|text|	0|	null|	0|
+
+#### Drivers_license
+	PRAGMA table_info (Drivers_license);
+
+cid |	name|	type|	notnull	|dflt_value|	pk|
+----|--------| -----|-----------|----------|------|
+0|	id|	integer|	0|	null|	1|
+1|	age|	integer	|0|	null|	0|
+2|	height|	integer	|0|	null|	0|
+3|	eye_color|	text|	0|	null|	0|
+4|	hair_color|	text|	0|	null|	0|
+5|	gender|	text|	0|	null|	0|
+6|	plate_number|	text|	0|	null|	0|
+7|	car_make|	text|	0|	null|	0|
+8|	car_model|	text|	0|	null|	0|
+
