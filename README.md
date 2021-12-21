@@ -48,3 +48,31 @@ cid |	name|	type|	notnull	|dflt_value|	pk|
 7|	car_make|	text|	0|	null|	0|
 8|	car_model|	text|	0|	null|	0|
 
+#### Person
+	PRAGMA table_info(person);
+cid|	name|	type|	notnull|	dflt_value|	pk|
+---|--------| -----|-----------|----------|------|
+0|	id |	integer|	0|	null|	1|
+1|	name |	text|	0|	null|	0|
+2|	license_id|	integer|	0|	null|	0|
+3|	address_number|	integer|	0|	null|	0|
+4|	address_street_name|	text|	0|	null|	0|
+5|	ssn|	integer|	0|	null|	0|
+
+#### Facebook_event_checkin
+	PRAGMA table_info(facebook_event_checkin);
+cid|	name|	type|	notnull|	dflt_value|	pk|
+---|--------|-------|-----------|-----------------|-------|
+0|	person_id|	integer|	0|	null|	0|
+1|	event_id|	integer| 0|	null|	0|
+2|	event_name|	text|	0|	null|	0|
+3|	date|	integer|	0|	null|	0|
+
+#### Interview
+	PRAGMA table_info(interview);
+cid|	name|	type|	notnull	|dflt_value	|pk|
+---|--------|-------|-----------|-----------------|-------|
+0|	person_id|	integer|	0|	null|	0|
+1|	transcript|	text|	0|	null|	0|
+
+
