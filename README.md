@@ -11,12 +11,6 @@ To understand the available dataset, I ran queries to find the names of the tabl
       FROM sqlite_master
       WHERE type = 'table'
 #### Result:
-| cid | 
-| --- | 
-| 0   |
-| 1   | 
-| 2   | 
-
 | name                   | 
 |  -------------         |
 | crime_scene_report     |
@@ -28,3 +22,13 @@ To understand the available dataset, I ran queries to find the names of the tabl
 | get_fit_now_check_in |
 | income |
 | solution |
+
+To understand the structure of each table:
+#### Crime_scene_report
+	PRAGMA table_info(crime_scene_report);
+cid|	name|	type|	notnull|	dflt_value	|pk|
+-------------
+0|	date|	integer|	0|	null	0|
+1|	type|	text|	0|	null|	0|
+2|	description| |	text|	0|	null|	0|
+3|	city	|text|	0|	null|	0|
